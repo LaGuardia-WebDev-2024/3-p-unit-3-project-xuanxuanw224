@@ -28,8 +28,8 @@ Select ONE Additional Feature to Add
 
     html {
       box-shadow: inset 0 0 0 10000px rgba(70, 46, 11, 0.699); 
-      height: 100%;
-
+      height: 10000%; 
+      scroll-behavior: smooth;
     }
 
     h1 {
@@ -45,13 +45,24 @@ Select ONE Additional Feature to Add
     }
 
     ul {
-      color: aqua;
+      color: rgb(216, 209, 190);
+      width: 100px;
     }
-
+    ol {
+      width: 100px; 
+      color: rgb(216, 209, 190);
+    }
     tr {
-      color: rgb(114, 83, 255);
+      color: rgb(216, 209, 190);
     }
-
+    img {
+      width: 600px;
+    }
+    table,th,td {
+  border: 1px solid;
+  padding: 10px;
+    }
+    
   </style>
 </head>
 
@@ -62,10 +73,13 @@ Select ONE Additional Feature to Add
   <h2>Contents:</h2>
 
   <ol>
-    <li><a href="?">Tradtiional Art</a></li>
+    <li><a href="#Observational">Observational</a></li>
+    <li><a href="?">Paintings</a></li>
+    <li><a href="?">Traditional</a></li>
+    <li><a href="?">Digital Art</a></li>
   </ol>
 
-  <h2 id="?">TRADITIONAL</h2>
+  <h2 id="Observational">Observational</h2>
 
   <ul>
     <li>Time: _</li>
@@ -75,14 +89,16 @@ Select ONE Additional Feature to Add
   <table>
     <thead>
       <tr>
-        <th>Ingredients</th>
-        <th>Quantity</th>
+        <th style="width: 100px;">Title</th>
+        <th>Image</th>
+        <th style="width: 100px;">Artist Statement</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Ingredient #1</td>
-        <td>Quantity #1</td>
+        <td>Still Life</td>
+        <td><img src="cindy sl1.jpg" alt="Still life"></td>
+        <td>Drawing with graphite from live obervation</td>
       </tr>
     </tbody>
   </table>
